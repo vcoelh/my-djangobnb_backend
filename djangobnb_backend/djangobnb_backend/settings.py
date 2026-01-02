@@ -83,7 +83,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://147.182.200.106:1337',
 ]
 
-CORS_TRUSTED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://localhost:8000',
     'http://127.0.0.1:3000',
@@ -101,9 +101,6 @@ CORS_ORIGINS_WHITELIST = [
     'http://147.182.200.106:1337',
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://147.182.200.106:1337',
-]
 
 REST_AUTH = {
     'USE_JWT': True,
