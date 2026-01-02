@@ -101,6 +101,10 @@ CORS_ORIGINS_WHITELIST = [
     'http://147.182.200.106:1337',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://147.182.200.106:1337',
+]
+
 REST_AUTH = {
     'USE_JWT': True,
     'JWT_AUTH_HTTPONLY': False,
