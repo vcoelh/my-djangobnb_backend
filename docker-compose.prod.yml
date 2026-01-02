@@ -26,6 +26,8 @@ services:
     command: daphne --bind 0.0.0.0  -p 8002 djangobnb_backend.asgi:application
     ports:
       - 8002:8002
+    env_file:
+      - .env
   db:
     image: postgres:15
     volumes:
