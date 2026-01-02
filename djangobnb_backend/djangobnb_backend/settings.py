@@ -22,7 +22,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS').split(' ')
+if DEBUG:
+    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "147.182.200.106"]
+else:
+    ALLOWED_HOSTS = ["147.182.200.106"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
